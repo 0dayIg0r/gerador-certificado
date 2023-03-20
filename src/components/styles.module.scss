@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70vw;
+    height: 100%;
+    background-image: url(../assets/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8vw 0;
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Vollkorn SC', serif;
+        font-weight: 700;
+        color: #053B77;
+    }
+
+}
+
+.subTitle {
+    margin: 55px 0px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.infos {
+    width: 510px;
+    margin-top: 30px;
+    word-break: break-word;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+   
+}
+
+.infosContent {
+    width: 440px;
+    margin-top: 30px;
+    word-break: break-word;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+.signatureContainer {
+    width: 600px;
+    margin: -90px auto;
+
+    img {
+        width: 100px;
+    }
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        margin: 30px 0px;
+    }
+}
+
+.superiorSignature {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+
+}
+
+.studentSignature {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    
+}
