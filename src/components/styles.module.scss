@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 
 .container {
@@ -11,9 +13,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0px auto;
+    
 }
 
 .content {
+    
     display: flex;
     justify-content: center;
     align-items: center;

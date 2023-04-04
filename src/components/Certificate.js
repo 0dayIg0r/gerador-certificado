@@ -32,7 +32,7 @@ const Certificate = ({ name, teacherName, h, courseName, date, endDate }) => {
         <div className={styles.signature}>
           <span>________________________________________</span>          </div>
         <div className={styles.superiorSignature}>
-          <span>Assinatura do diretor(a)</span>
+          <span>Assinatura do coordenador(a)</span>
         </div>
 
         <div className={styles.signature}>

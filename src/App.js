@@ -2,9 +2,12 @@ import Certificate from "./components/Certificate";
 
 import { useState } from "react";
 
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./components/Home/Home";
+
 
 function App() {
-  const [name, setName] = useState('Maisa Silva Sousa')
+  const [name, setName] = useState('Camila Freire Melo')
   const [teacherName, setTeacherName] = useState('Igor Medeiros Freitas')
   const [h, setH] = useState(20)
   const [courseName, setCourseName] = useState('Pacote Office')
@@ -13,17 +16,30 @@ function App() {
   const [directorName, setDirectorName] = useState('Nome do diretor(a)')
 
   return (
-    <div>
-      <Certificate
-        name={name}
-        teacherName={teacherName}
-        h={h}
-        courseName={courseName}
-        date={date}
-        endDate={endDate}
+    <BrowserRouter>
+      <Routes>
 
-      />
-    </div>
+        <Route path="/" element={<Home
+          name={name}
+          teacherName={teacherName}
+          h={h}
+          courseName={courseName}
+          date={date}
+          endDate={endDate}
+        />} />
+
+
+        <Route path='/certificate' element={<Certificate
+          name={name}
+          teacherName={teacherName}
+          h={h}
+          courseName={courseName}
+          date={date}
+          endDate={endDate}
+        />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

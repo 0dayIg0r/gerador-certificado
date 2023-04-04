@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20vh;
+    padding: 30px;
+
+}
+
+.header {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    color: #053B77;
+}
+
+.btnContent{
+    margin-top: 15vh;
+}
