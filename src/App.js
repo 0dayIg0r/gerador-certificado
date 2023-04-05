@@ -7,13 +7,38 @@ import Home from "./components/Home/Home";
 
 
 function App() {
-  const [name, setName] = useState('Camila Freire Melo')
-  const [teacherName, setTeacherName] = useState('Igor Medeiros Freitas')
-  const [h, setH] = useState(20)
-  const [courseName, setCourseName] = useState('Pacote Office')
-  const [date, setDate] = useState('16/10/2022')
-  const [endDate, setEndDate] = useState('20/10/2022')
-  const [directorName, setDirectorName] = useState('Nome do diretor(a)')
+  const [name, setName] = useState('')
+  const [teacherName, setTeacherName] = useState('')
+  const [h, setH] = useState()
+  const [courseName, setCourseName] = useState('')
+  const [date, setDate] = useState('')
+  const [endDate, setEndDate] = useState('')
+  const [directorName, setDirectorName] = useState('')
+  
+
+  const handleName = (e) => {
+    setName(e.target.value)
+  }
+  const handleTeacher = (e) => {
+    setTeacherName(e.target.value)
+  }
+  const handleH = (e) => {
+    setH(e.target.value)
+  }
+  const handleCurse = (e) => {
+    setCourseName(e.target.value)
+  }
+  const handleDate = (e) => {
+    setDate(e.target.value)
+  }
+  const handleEnd = (e) => {
+    setEndDate(e.target.value)
+  }
+  const handleDirector = (e) => {
+    setDirectorName(e.target.value)
+  }
+
+
 
   return (
     <BrowserRouter>
@@ -26,6 +51,17 @@ function App() {
           courseName={courseName}
           date={date}
           endDate={endDate}
+          directorName={directorName}
+
+          // functions
+          handleName={handleName}
+          handleCurse={handleCurse}
+          handleDate={handleDate}
+          handleDirector={handleDirector}
+          handleEnd={handleEnd}
+          handleH={handleH}
+          handleTeacher={handleTeacher}
+      
         />} />
 
 

@@ -5,7 +5,17 @@ import styles from './styles.module.scss'
 
 
 
-const Certificate = ({ name, teacherName, h, courseName, date, endDate }) => {
+const Certificate = ({
+  name,
+  teacherName,
+  h,
+  courseName,
+  date,
+  endDate,
+
+}) => {
+
+ 
   return (
     <div className={styles.container}>
 
@@ -22,7 +32,7 @@ const Certificate = ({ name, teacherName, h, courseName, date, endDate }) => {
         </div>
         <div className={styles.infos}>
           <span>
-            O certificado de conclusão do curso de {courseName},
+            O certificado de conclusão do curso de <b>{courseName}</b>,
             ministrado pelo profissional {teacherName},
             entre o período de {date} e {endDate}
           </span>
@@ -45,6 +55,7 @@ const Certificate = ({ name, teacherName, h, courseName, date, endDate }) => {
           <img src={Medal} />
           <img src={Asp} />
         </div>
+
 
       </div>
     </div>
