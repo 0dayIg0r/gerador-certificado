@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useState } from 'react'
 
 import TextField from '@mui/material/TextField';
@@ -90,7 +91,7 @@ const Home = ({
                     <TextField
                         id="outlined-error-helper-text"
                         label="Nome do Curso"
-                        helperText="Exemplo: Curso de Pacote Office"
+                        helperText="Exemplo: Pacote Office"
                         value={courseName}
                         onChange={handleCurse}
 
@@ -131,6 +132,7 @@ const Home = ({
     return (
         <>
             {loading ? content() :
+                // eslint-disable-next-line react/jsx-no-comment-textnodes
                 <div className={styles.loading}>
                     <img src={Load} />
                 </div>
